@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F6F2;
+    color: #5B5B5B;
+}
+
+header, section, footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(135deg, #8B4513, #A0522D); /* Updated brown colors */
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 10px 0 30px;
+}
+
+header button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #D2B48C; /* Tan color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+header button:hover {
+    background-color: #F5DEB3; /* Wheat color */
+}
+
+/* Sign In Button */
+.signin-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #A0522D; /* Sienna brown */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-color: #8B4513; /* Dark brown */
+}
+
+/* Sign In Form */
+.signin-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    width: 300px;
+    text-align: center;
+}
+
+.signin-form.active {
+    display: block;
+}
+
+.signin-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signin-form button {
+    background-color: #A0522D; /* Sienna brown */
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.signin-form button:hover {
+    background-color: #DEB887; /* Burlywood color */
+}
+
+/* Full-Sized Section Styles */
+.full-section {
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Section Backgrounds */
+#choose-design {
+    background-image: url('https://i.postimg.cc/L6GrJLhy/Bild.webp');
+}
+
+#get-domain {
+    background-image: url('https://i.postimg.cc/7h6p2NgR/istockphoto-1402430797-612x612.jpg');
+}
+
+#earn-money {
+    background-image: url('https://i.postimg.cc/HLgR2mwX/dark-workspace-blogging-backdrop-acqoss4ry3i7ijyl.jpg');
+}
+
+#published-blogs {
+    background-image: url('https://i.postimg.cc/MKXSMz5G/images-7.jpg');
+}
+
+footer {
+    background-color: #A0522D; /* Sienna brown */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Blog List */
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-card {
+    width: 300px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-card h3, .blog-card p {
+    margin: 10px;
+}
+
+/* Blog Creation Form */
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+}
+
+.form-container input, .form-container textarea, .form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #A0522D; /* Sienna brown */
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #DEB887; /* Burlywood color */
+}
